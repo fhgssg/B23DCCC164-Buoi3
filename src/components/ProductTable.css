@@ -1,0 +1,124 @@
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border: 1px solid #ddd; /* Viền ngoài bảng */
+}
+
+.product-table th,
+.product-table td {
+  padding: 5px; /* Giảm padding để giảm chiều cao */
+  text-align: left;
+  border: 1px solid #ddd; /* Viền giữa các ô */
+  line-height: 1.5; /* Đảm bảo dòng không quá cao */
+  height: 40px; /* Cố định chiều cao cho các ô */
+}
+
+.product-table th {
+  background-color: #f4f4f4;
+}
+
+.product-table td {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Quy định kích thước các cột */
+.product-table th:nth-child(1),
+.product-table td:nth-child(1) {
+  width: 40%; /* Chiếm 40% bảng */
+}
+
+.product-table th:nth-child(2),
+.product-table td:nth-child(2) {
+  width: 40%; /* Chiếm 40% bảng */
+}
+
+.product-table th:nth-child(3),
+.product-table td:nth-child(3) {
+  width: 20%; /* Chiếm 20% bảng */
+  text-align: center; /* Căn giữa */
+}
+
+/* Nút chỉnh sửa */
+.edit-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 3px 6px !important; /* Giảm padding xuống một nửa */
+  margin-right: 20px; /* Tạo khoảng cách giữa 2 nút */
+  border-radius: 4px !important;
+  border: none;
+  cursor: pointer;
+  font-size: 20px !important;
+  display: inline-block; /* Giảm font-size xuống một nửa */
+}
+
+.edit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Nút xóa */
+.delete-btn {
+  background-color: #ff4d4f !important; /* Màu đỏ cho nút xóa */
+  color: white !important;
+  padding: 3px 6px !important;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px !important;
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Màu khi hover */
+.delete-btn:hover {
+  background-color: #b21f2d; /* Đỏ sậm khi hover */
+}
+
+
+/* Tooltip khi hover vào nút xóa */
+.delete-btn::after {
+  content: 'Khi xóa không thể khôi phục lại dữ liệu!';
+  visibility: hidden;
+  opacity: 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute; /* Đảm bảo vị trí tuyệt đối */
+  z-index: 1;
+  bottom: 120%; /* Điều chỉnh khoảng cách từ nút */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 10px;
+  transition: opacity 0.3s ease-in-out; /* Hiệu ứng chuyển opacity */
+}
+
+.delete-btn:hover::after {
+  visibility: visible;
+  opacity: 1; /* Hiển thị tooltip khi hover */
+}
+
+
+/* Phân trang */
+.pagination {
+  display: flex;
+  justify-content: center; /* Căn giữa phân trang */
+  margin-top: 10px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  background-color: #f4f4f4;
+}
+
+.pagination button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}

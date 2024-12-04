@@ -1,0 +1,107 @@
+.add-product-form {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.add-product-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.add-product-form input,
+.add-product-form select {
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.add-product-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.add-product-form .add-button {
+  background-color: #28a745; /* Màu xanh lá cho nút Thêm */
+  color: white;
+  margin-top: 10px;
+}
+
+.add-product-form .add-button:hover {
+  background-color: #218838; /* Xanh lá đậm hơn khi hover */
+}
+
+.add-product-form .close-button-secondary {
+  background-color: #6c757d; /* Màu xám cho nút Đóng */
+  color: white;
+  margin-top: 10px;
+}
+
+.add-product-form .close-button-secondary:hover {
+  background-color: #5a6268; /* Xám đậm hơn khi hover */
+}
+
+/* Làm mờ nền khi mở modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  
+}
+
+
+
+
+
+
+
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
