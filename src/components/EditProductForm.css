@@ -1,4 +1,3 @@
-/* Phần style của form chỉnh sửa sản phẩm */
 .edit-product-form {
   display: flex;
   flex-direction: column;
@@ -53,29 +52,26 @@
   transition: background-color 0.3s ease, opacity 0.3s ease;
 }
 
-/* Nút Lưu - Màu xanh lá */
 .edit-product-form .save-button {
-  background-color: #28a745 !important; /* Đảm bảo màu xanh lá được áp dụng */
+  background-color: #28a745 !important; 
   color: white;
   margin-top: 10px;
 }
 
 .edit-product-form .save-button:hover {
-  background-color: #218838 !important; /* Xanh lá đậm hơn khi hover */
+  background-color: #218838 !important; 
 }
 
-/* Nút Đóng - Màu xám */
 .edit-product-form .close-button-secondary {
-  background-color: #6c757d !important; /* Đảm bảo màu xám được áp dụng */
+  background-color: #6c757d !important; 
   color: white;
   margin-top: 10px;
 }
 
 .edit-product-form .close-button-secondary:hover {
-  background-color: #5a6268 !important; /* Xám đậm hơn khi hover */
+  background-color: #5a6268 !important; 
 }
 
-/* Làm mờ nền khi mở modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -93,7 +89,6 @@
   font-size: 20px;
 }
 
-/* Hiển thị lỗi */
 .error-message {
   color: #dc3545;
   font-size: 14px;

@@ -10,7 +10,7 @@ const AddProductForm: React.FC<AddProductFormProps> = ({ onSubmit, onClose }) =>
     const [name, setName] = useState('');
     const [price, setPrice] = useState('');
     const [category, setCategory] = useState('Văn phòng phẩm');
-    const [error, setError] = useState(''); // Lưu lỗi khi cần
+    const [error, setError] = useState('');
 
     const handleSubmit = () => {
         if (!name || !price || !category) {
@@ -18,7 +18,7 @@ const AddProductForm: React.FC<AddProductFormProps> = ({ onSubmit, onClose }) =>
             return;
         }
 
-        setError(''); // Xóa lỗi khi thông tin hợp lệ
+        setError('');
         onSubmit({
             id: Date.now(),
             name,
@@ -29,7 +29,7 @@ const AddProductForm: React.FC<AddProductFormProps> = ({ onSubmit, onClose }) =>
 
     const handleInputChange = (setter: React.Dispatch<React.SetStateAction<string>>, value: string) => {
         setter(value);
-        setError(''); // Xóa lỗi khi người dùng nhập
+        setError('');
     };
 
     return (

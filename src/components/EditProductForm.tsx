@@ -11,7 +11,7 @@ const EditProductForm: React.FC<EditProductFormProps> = ({ product, onSubmit, on
     const [name, setName] = useState(product.name);
     const [price, setPrice] = useState(product.price.toString());
     const [category, setCategory] = useState(product.category);
-    const [error, setError] = useState(''); // Lưu lỗi khi cần
+    const [error, setError] = useState('');
 
     const handleSubmit = () => {
         if (!name || !price || !category) {
@@ -19,7 +19,7 @@ const EditProductForm: React.FC<EditProductFormProps> = ({ product, onSubmit, on
             return;
         }
 
-        setError(''); // Xóa lỗi khi thông tin hợp lệ
+        setError('');
         onSubmit({
             id: product.id,
             name,
@@ -30,7 +30,7 @@ const EditProductForm: React.FC<EditProductFormProps> = ({ product, onSubmit, on
 
     const handleInputChange = (setter: React.Dispatch<React.SetStateAction<string>>, value: string) => {
         setter(value);
-        setError(''); // Xóa lỗi khi người dùng nhập
+        setError('');
     };
 
     return (

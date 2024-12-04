@@ -53,26 +53,25 @@
 }
 
 .add-product-form .add-button {
-  background-color: #28a745; /* Màu xanh lá cho nút Thêm */
+  background-color: #28a745; 
   color: white;
   margin-top: 10px;
 }
 
 .add-product-form .add-button:hover {
-  background-color: #218838; /* Xanh lá đậm hơn khi hover */
+  background-color: #218838; 
 }
 
 .add-product-form .close-button-secondary {
-  background-color: #6c757d; /* Màu xám cho nút Đóng */
+  background-color: #6c757d; 
   color: white;
   margin-top: 10px;
 }
 
 .add-product-form .close-button-secondary:hover {
-  background-color: #5a6268; /* Xám đậm hơn khi hover */
+  background-color: #5a6268; 
 }
 
-/* Làm mờ nền khi mở modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -90,13 +89,6 @@
   font-size: 20px;
   
 }
-
-
-
-
-
-
-
 
 .error-message {
   color: #dc3545;

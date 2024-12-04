@@ -2,16 +2,16 @@
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  border: 1px solid #ddd; /* Viền ngoài bảng */
+  border: 1px solid #ddd; 
 }
 
 .product-table th,
 .product-table td {
-  padding: 5px; /* Giảm padding để giảm chiều cao */
+  padding: 5px; 
   text-align: left;
-  border: 1px solid #ddd; /* Viền giữa các ô */
-  line-height: 1.5; /* Đảm bảo dòng không quá cao */
-  height: 40px; /* Cố định chiều cao cho các ô */
+  border: 1px solid #ddd; 
+  line-height: 1.5; 
+  height: 40px; 
 }
 
 .product-table th {
@@ -23,43 +23,40 @@
   color: #333;
 }
 
-/* Quy định kích thước các cột */
 .product-table th:nth-child(1),
 .product-table td:nth-child(1) {
-  width: 40%; /* Chiếm 40% bảng */
+  width: 40%; 
 }
 
 .product-table th:nth-child(2),
 .product-table td:nth-child(2) {
-  width: 40%; /* Chiếm 40% bảng */
+  width: 40%; 
 }
 
 .product-table th:nth-child(3),
 .product-table td:nth-child(3) {
-  width: 20%; /* Chiếm 20% bảng */
-  text-align: center; /* Căn giữa */
+  width: 20%; 
+  text-align: center; 
 }
 
-/* Nút chỉnh sửa */
 .edit-btn {
   background-color: #007bff;
   color: white;
-  padding: 3px 6px !important; /* Giảm padding xuống một nửa */
-  margin-right: 20px; /* Tạo khoảng cách giữa 2 nút */
+  padding: 3px 6px !important; 
+  margin-right: 20px; 
   border-radius: 4px !important;
   border: none;
   cursor: pointer;
   font-size: 20px !important;
-  display: inline-block; /* Giảm font-size xuống một nửa */
+  display: inline-block; 
 }
 
 .edit-btn:hover {
   background-color: #0056b3;
 }
 
-/* Nút xóa */
 .delete-btn {
-  background-color: #ff4d4f !important; /* Màu đỏ cho nút xóa */
+  background-color: #ff4d4f !important; 
   color: white !important;
   padding: 3px 6px !important;
   border-radius: 4px;
@@ -71,13 +68,11 @@
 }
 
 
-/* Màu khi hover */
 .delete-btn:hover {
-  background-color: #b21f2d; /* Đỏ sậm khi hover */
+  background-color: #b21f2d; 
 }
 
 
-/* Tooltip khi hover vào nút xóa */
 .delete-btn::after {
   content: 'Khi xóa không thể khôi phục lại dữ liệu!';
   visibility: hidden;
@@ -87,26 +82,25 @@
   text-align: center;
   border-radius: 4px;
   padding: 5px;
-  position: absolute; /* Đảm bảo vị trí tuyệt đối */
+  position: absolute;
   z-index: 1;
-  bottom: 120%; /* Điều chỉnh khoảng cách từ nút */
+  bottom: 120%; 
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
   font-size: 10px;
-  transition: opacity 0.3s ease-in-out; /* Hiệu ứng chuyển opacity */
+  transition: opacity 0.3s ease-in-out; 
 }
 
 .delete-btn:hover::after {
   visibility: visible;
-  opacity: 1; /* Hiển thị tooltip khi hover */
+  opacity: 1; 
 }
 
 
-/* Phân trang */
 .pagination {
   display: flex;
-  justify-content: center; /* Căn giữa phân trang */
+  justify-content: center; 
   margin-top: 10px;
 }
 

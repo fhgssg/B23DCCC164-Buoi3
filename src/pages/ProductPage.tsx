@@ -12,7 +12,7 @@ const ProductPage: React.FC = () => {
   const products = useSelector((state: RootState) => state.products);
   const [isAddVisible, setIsAddVisible] = useState(false);
   const [editProductData, setEditProductData] = useState<any>(null);
-  const [searchTerm, setSearchTerm] = useState<string>(''); // Thêm trạng thái tìm kiếm
+  const [searchTerm, setSearchTerm] = useState<string>('');
 
   const handleAddProduct = (product: any) => {
     dispatch(addProduct(product));
@@ -28,7 +28,6 @@ const ProductPage: React.FC = () => {
     dispatch(deleteProduct(id));
   };
 
-  // Lọc sản phẩm theo tìm kiếm
   const filteredProducts = products.products.filter((product: any) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -37,10 +36,10 @@ const ProductPage: React.FC = () => {
     <div className="product-page">
       <h1>Bảng Thông Tin</h1>
 
-      {/* Nút Thêm Hàng Hóa */}
+
       <button onClick={() => setIsAddVisible(true)}>Thêm Hàng Hóa</button>
 
-      {/* Thanh tìm kiếm */}
+
       <div className="search-container">
         <input
           type="text"
@@ -51,11 +50,11 @@ const ProductPage: React.FC = () => {
         />
       </div>
 
-      {/* Form Thêm Hàng Hóa */}
+
       {isAddVisible && (
         <AddProductForm onSubmit={handleAddProduct} onClose={() => setIsAddVisible(false)} />
       )}
-      {/* Form Chỉnh sửa Hàng Hóa */}
+
       {editProductData && (
         <EditProductForm
           product={editProductData}
@@ -64,9 +63,9 @@ const ProductPage: React.FC = () => {
         />
       )}
 
-      {/* Bảng Sản phẩm */}
+
       <ProductTable
-        products={filteredProducts} // Truyền danh sách sản phẩm đã lọc
+        products={filteredProducts}
         onEdit={(product) => setEditProductData(product)}
         onDelete={handleDeleteProduct}
       />

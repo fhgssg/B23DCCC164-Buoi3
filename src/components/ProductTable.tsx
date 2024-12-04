@@ -64,7 +64,7 @@ const ProductTable: React.FC<ProductTableProps> = ({ products, onEdit, onDelete 
                 </tbody>
             </table>
 
-            {/* Phân trang */}
+
             <div className="pagination">
                 <button onClick={handlePrevPage} disabled={currentPage === 1}>
                     Trước

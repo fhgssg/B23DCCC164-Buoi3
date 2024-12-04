@@ -5,8 +5,8 @@
 
 .product-page h1 {
   margin-bottom: 20px;
-  text-align: left;  /* Căn lề trái */
-  padding-left: 20px;  /* Thêm khoảng cách bên trái nếu cần */
+  text-align: left;  
+  padding-left: 20px;  
 }
 
 
@@ -24,9 +24,8 @@
   background-color: #0056b3;
 }
 
-/* Thanh tìm kiếm */
 .search-container {
-  margin-top: 10px; /* Thêm khoảng cách giữa nút và thanh tìm kiếm */
+  margin-top: 10px; 
 }
 
 .search-bar {
